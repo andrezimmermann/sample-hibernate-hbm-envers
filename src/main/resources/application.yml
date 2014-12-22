@@ -1,0 +1,10 @@
+spring:
+    datasource:
+        url: jdbc:hsqldb:mem:example;
+    jpa:
+        openInView: false
+        show_sql: true
+        generate-ddl: true
+        properties:
+             org.hibernate.envers.global_with_modified_flag: true
+             org.hibernate.envers.audit_strategy: org.hibernate.envers.strategy.ValidityAuditStrategy
