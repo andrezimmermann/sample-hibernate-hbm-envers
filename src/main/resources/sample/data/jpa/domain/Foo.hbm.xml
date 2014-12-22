@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="sample.data.jpa.domain.Foo" table="foo_table">
+		<id name="key" type="java.lang.Integer">
+			<column name="key" />
+			<generator class="identity" />
+		</id>
+		<property name="description" type="string">
+			<column name="description" length="100" />
+		</property>
+		<property name="unimportantDescription" type="string">
+			<column name="unimportant_description" length="100" />
+		</property>
+	</class>
+</hibernate-mapping>
